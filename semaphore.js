@@ -63,10 +63,12 @@ this.Atomic.module('$semaphore', ['$apply', '$forEach'], function ($apply, $forE
       if (this._listeners.length > 1) {
         return;
       }
-  
-      predicate(description, function(data) {
+      
+      function response(data) {
         $forEach(this._listeners, $apply(_, [this._result = data]));
-      });
+      }
+  
+      predicate(description, response.bind(this));
       
     }
     
