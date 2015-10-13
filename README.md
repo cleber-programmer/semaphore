@@ -1,2 +1,3 @@
-# semaphore
-Controle de concorrencia a funcao curry
+### $semaphore
+
+Controle de concorrencia de requisicao (semafaro) a funcao curry
