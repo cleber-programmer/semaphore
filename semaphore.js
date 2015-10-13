@@ -76,14 +76,14 @@ this.Atomic.module('$semaphore', ['$apply', '$forEach'], function ($apply, $forE
      * 
      */
     function resolve(a) {
-      return store[a] = store[a] || controller;
+      return store[a] = store[a] || controller.bind({});
     }
     
     /**
      * 
      */
     return function (description, callback) {
-      $apply(resolve(JSON.stringify(description)), [description, callback]);
+      resolve(JSON.stringify(description))(description, callback);
     };
     
   }
