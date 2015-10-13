@@ -1,0 +1,20 @@
+{
+  "name": "Atomic.JS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/AtomicES/AtomicES.git",
+  "description": "Atomic ES é uma forma simples de organizar seu codigo javascript em modulos de forma que podem se agrupar de diferentes maneiras para criar sistemas complexos",
+  "main": "dest/atomic-es.min.js",
+  "keywords": [
+    "javascript"
+  ],
+  "authors": [
+    "Cleber de Moraes Goncalves <cleber.programmer@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "modules",
+    "node_modules",
+    "bower_components"
+  ]
+}
