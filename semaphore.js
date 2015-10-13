@@ -81,7 +81,7 @@ this.Atomic.module('$semaphore', ['$apply', '$forEach'], function ($apply, $forE
      * 
      */
     return function (description, callback) {
-      resolve(JSON.stringify(description))(description, callback);
+      $apply(resolve(JSON.stringify(description)), [description, callback]);
     };
     
   }
